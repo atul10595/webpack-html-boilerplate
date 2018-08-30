@@ -20,5 +20,5 @@ Note: the changes made while server on might not reflect in bundled `.js` file.
 
 After finalising the changes with hot load, run following command again:
 ```
-yarn run build:prod` 
+yarn run build:prod
 ```

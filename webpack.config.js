@@ -1,6 +1,8 @@
 // This library allows us to combine paths easily
 const path = require('path');
 const webpack = require("webpack");
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+
 module.exports = {
     mode: "development", // production
     context: path.resolve(__dirname, 'static/js'),
@@ -34,6 +36,10 @@ module.exports = {
             "windows.jQuery": "jquery",
         })
     ],
+    optimization: {
+        minimize: true,
+        minimizer: [new UglifyJsPlugin({ /* your config */ })]
+    },
     resolve: {
         extensions: ['.js'],
     },

@@ -1,15 +1,19 @@
+body, html {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+}
 .my-flex-container {
     border: 2px solid green;
-    height: 100px;
-    margin-bottom: 20px;
-
+    width: 100%;
 }
 
 .my-flex-item {
     background-color: lightgrey;
     border: 1px dotted;
-    height: 48px;
-    /*width: 36px;*/
+    width: 100%;
 
 }
 

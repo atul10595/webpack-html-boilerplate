@@ -7,20 +7,72 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yarn Practice</title>
     <link rel="stylesheet" href="static/css/grid_flex.css" class="href">
+    <link rel="stylesheet" href="static/css/bootstrap.ux.css" class="href">
 </head>
 <body>
 
-<div class="container text-center">
+<div class="container">
     <div class="row header align-items-center">
         <div class="col-md">
-            <h1>HEADER</h1>
+            <h1 class="text-center">HEADER</h1>
         </div>
     </div>
-    <div class="row content align-items-center">
-        <div class="col-md">CONTENT</div>
+    <div class="row content">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Login</h1>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form class="no-gutters">
+                                <div class="form-group col-md-6">
+                                    <label>Username: </label>
+                                    <input class="form-control" name="username"/>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Password: </label>
+                                    <input class="form-control" name="password"/>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <button class="submit btn btn-primary">Submit</button>
+                                    <div class="w-100"></div>
+                                    <small class="text-muted">Clicking Submit means agreeing to our <a href="#">Privacy Policy</a></small>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h1>Sign Up</h1>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form class="no-gutters">
+                                <div class="form-group col-md-6">
+                                    <label for="username">Username: </label>
+                                    <input id="username" class="form-control" name="username"/>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="password">Password: </label>
+                                    <input id="password" class="form-control" name="password"/>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="confirm_password">Confirm Password: </label>
+                                    <input id="confirm_password" class="form-control" name="confirm_password"/>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <button class="submit btn btn-primary">Submit</button>
+                                    <div class="w-100"></div>
+                                    <small class="text-muted">Clicking Submit means agreeing to our <a href="#">Privacy Policy</a></small>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="row footer align-items-center">
-        <div class="col-md">FOOTER</div>
+        <div class="col-md text-center">FOOTER</div>
     </div>
 </div>
 <script src="static/js/bundle/index.bundle.js"></script>

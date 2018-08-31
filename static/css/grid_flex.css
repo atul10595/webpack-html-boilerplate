@@ -20,6 +20,8 @@ body, html {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
+
+    background-color: #eee;
 }
 
 .row.footer {
@@ -30,6 +32,6 @@ body, html {
 
 nav,
 div {
-    border: 1px dotted;
+    /*border: 1px dotted;*/
 }
 
